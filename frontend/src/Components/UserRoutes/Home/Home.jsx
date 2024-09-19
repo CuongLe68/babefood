@@ -69,7 +69,7 @@ function Home() {
     const axiosJWT = createAxios(user, dispatch, loginSuccess);
 
     const [currentList, setCurrentList] = useState('All');
-    const [isLoading, setIsLoading] = useState(false); //sửa lại khi có api product
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const fetchData = async () => {
